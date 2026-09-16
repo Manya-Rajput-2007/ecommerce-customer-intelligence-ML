@@ -263,14 +263,16 @@ with col2:
 
     fig, ax = plt.subplots(figsize=(8, 5))
 
-    ax.pie(
+    wedges, texts, autotexts = ax.pie(
         segment_pie.values,
         labels=segment_pie.index,
         autopct="%1.1f%%",
-        startangle=90
+        startangle=90,
+        wedgeprops={"linewidth": 1, "edgecolor": "white"}
     )
 
     ax.set_title("Segment Share")
+    ax.axis("equal")
 
     st.pyplot(fig)
 
