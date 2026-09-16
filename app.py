@@ -261,7 +261,7 @@ with col2:
 
     segment_pie = filtered_df["Segment_Name"].value_counts()
 
-    fig, ax = plt.subplots(figsize=(7, 5))
+    fig, ax = plt.subplots(figsize=(8, 5))
 
     ax.pie(
         segment_pie.values,
