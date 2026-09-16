@@ -101,7 +101,7 @@ The processed output files are stored in the `data` directory, especially in `da
 E-Commerce-Customer-Intelligence/
 │
 ├── app.py                          # Streamlit dashboard application
-├── Requirements.txt                # Python dependencies
+├── requirements.txt                # Python dependencies
 ├── data/
 │   ├── analysed_data03.csv
 │   ├── cleaned_data02.csv
@@ -174,7 +174,7 @@ source venv/bin/activate
 ### 3. Install dependencies
 
 ```bash
-pip install -r Requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Run the dashboard
