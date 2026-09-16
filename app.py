@@ -275,46 +275,6 @@ with col2:
     st.pyplot(fig)
 
 
-# =========================================================
-# CUSTOMER CLUSTER VISUALIZATION
-# =========================================================
-
-st.markdown(
-    '<div class="section-title">🔬 Customer Cluster Analysis</div>',
-    unsafe_allow_html=True
-)
-
-fig, ax = plt.subplots(figsize=(11, 6))
-
-sns.scatterplot(
-    data=pca_df,
-    x="PC1",
-    y="PC2",
-    hue="Cluster",
-    palette="tab10",
-    s=70,
-    alpha=0.8,
-    ax=ax
-)
-
-ax.set_title(
-    "Customer Clusters — PCA Visualization",
-    fontsize=16,
-    fontweight="bold"
-)
-
-ax.set_xlabel("Principal Component 1")
-ax.set_ylabel("Principal Component 2")
-
-ax.legend(
-    title="Cluster",
-    bbox_to_anchor=(1.02, 1),
-    loc="upper left"
-)
-
-plt.tight_layout()
-
-st.pyplot(fig)
 
 
 # =========================================================
